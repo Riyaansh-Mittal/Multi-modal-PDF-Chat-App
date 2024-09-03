@@ -29,11 +29,8 @@ from llama_index.core import SimpleDirectoryReader
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 # Ensure SpaCy model is downloaded
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    spacy_download("en_core_web_sm")
-    nlp = spacy.load("en_core_web_sm")
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 
 # Load the API key
 load_dotenv()
