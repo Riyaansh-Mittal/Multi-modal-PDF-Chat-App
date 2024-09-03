@@ -1,0 +1,7 @@
+streamlit
+python-dotenv
+spacy
+PyMuPDF
+transformers 
+llama_index
+llama-index-multi-modal-llms-gemini
