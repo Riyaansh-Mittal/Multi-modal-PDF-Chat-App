@@ -19,9 +19,9 @@ import re
 import fitz  # PyMuPDF
 # import torch
 # from PIL import Image
-from transformers import CLIPProcessor, CLIPModel
+# from transformers import CLIPProcessor, CLIPModel
 # import numpy as np
-from transformers import BlipProcessor, BlipForConditionalGeneration
+# from transformers import BlipProcessor, BlipForConditionalGeneration
 from llama_index.multi_modal_llms.gemini import GeminiMultiModal
 # from llama_index.core.multi_modal_llms.generic_utils import load_image_urls
 from llama_index.core import SimpleDirectoryReader
@@ -40,12 +40,12 @@ load_dotenv()
 # genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # CLIP model initialization
-clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
-clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+# clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+# clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
 # Initialize BLIP model and processor
-blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+# blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+# blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
 # Gemini model initialization
 gemini_model = GeminiMultiModal(model_name="models/gemini-1.5-flash")
