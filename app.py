@@ -17,8 +17,8 @@ import os
 from dotenv import load_dotenv
 import re
 import fitz  # PyMuPDF
-import torch
-from PIL import Image
+# import torch
+# from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
 # import numpy as np
 from transformers import BlipProcessor, BlipForConditionalGeneration
